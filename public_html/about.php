@@ -19,40 +19,9 @@
 </head>
 
 <body>
- <!-- Navigation Bar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-
-            <!-- Three line "hamburger" icon for the collapsed navigation -->
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <!-- Title on nav bar -->
-          <a class="navbar-brand" href="#">Game Space</a>
-        </div>
-
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-left">
-            <li><a href='index.html'>Home</a></li>
-            <li class="active"><a href='about.html'>About Us</a></li>
-            <li><a href='stores.html'>Where Are We?</a></li>
-            <li><a href='review.html'>Game Reviews</a></li>
-            <li><a href='order.html'>Order Now</a></li>
-            <li><a href='news.html'>Company News</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href='login.html'>Log In</a></li>
-            <li><a href='signup.html'>Sign Up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+        <?php
+        include '../resources/navigation.php';
+        ?>
       <div class="jumbotron">
         <div class="container">
          <div class="col-xs-12 col-md-6">
@@ -75,11 +44,9 @@
     </div>
   </section>
 
-  <footer>
-    <div style='text-align: center; padding-top: 50px'>
-      &copy; Josh Dietrich and Sam Law 2017
-    </div>
-  </footer>
+  <?php
+    include '../resources/footer.php';
+  ?>
 
     <!-- Scripts required to make Bootstrap work better. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
